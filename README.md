@@ -17,13 +17,16 @@ This code is used to control the position of a servo motor based on the ambient 
 #include <Deneyap_Servo.h>           //Adding the Deneyap Servo library 
 
 #define ldrpin A0
+
 Servo myservo;                         //Defining class for Servo
 
 
 void setup() {  
 
   myservo.attach(D12);
+  
   pinMode(ldrpin,INPUT);
+  
   Serial.begin(115200);
 
 }
@@ -31,8 +34,11 @@ void setup() {
 void loop() {
 
   int ldr = analogRead(A0);
+  
   Serial.println(ldr);
+  
   if(ldr > 1500  ){myservo.write(150);delay(50);}
+  
   else{myservo.write(180);}                     
 
 }
