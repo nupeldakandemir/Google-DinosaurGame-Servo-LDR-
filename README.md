@@ -8,7 +8,7 @@ This code is used to control the position of a servo motor based on the ambient 
 ![1](https://github.com/nupeldakandemir/Google-DinosaurGame-Servo-LDR-/assets/120253252/03021bd9-6b13-42d1-be2e-6447240c3422)
 
 
-
+'''cpp
 /*
   ServoMotor examp,
   The shaft of the servo motor connected to pin D9 rotates 60 degrees.
@@ -30,5 +30,5 @@ void loop() {
   else{myservo.write(180);}                     
 }
 
-
+'''
 
