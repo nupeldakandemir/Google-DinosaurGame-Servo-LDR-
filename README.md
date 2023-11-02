@@ -16,7 +16,7 @@ This code is used to control the position of a servo motor based on the ambient 
 #include <Deneyap_Servo.h>       //Adding the Deneyap Servo library 
 #define ldrpin A0
 Servo myservo;                   //Defining class for Servo
-
+'''
 void setup() {  
   myservo.attach(D12);
   pinMode(ldrpin,INPUT);
@@ -30,5 +30,5 @@ void loop() {
   else{myservo.write(180);}                     
 }
 
-'''
+
 
